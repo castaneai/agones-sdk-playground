@@ -1,0 +1,7 @@
+version: "3"
+services:
+  gameserver:
+    build: .
+  sdk-server:
+    build: ./sdk-server
+    network_mode: service:gameserver
